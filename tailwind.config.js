@@ -1,0 +1,17 @@
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+      },
+      aspectRatio: {
+        "4/3": "4 / 3",
+      },
+    },
+  },
+  plugins: [],
+};
