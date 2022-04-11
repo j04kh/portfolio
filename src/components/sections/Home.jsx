@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import ArrowDown from "../ArrowDown";
 
 const Macbook = dynamic(() => import("../Macbook"), {
   ssr: false,
@@ -6,7 +7,7 @@ const Macbook = dynamic(() => import("../Macbook"), {
 
 const Home = () => {
   return (
-    <section className="h-screen w-full">
+    <section className="h-screen w-full relative">
       <div className="h-full pt-0 mb-32 flex flex-1 flex-col items-center justify-center md:flex-row md:items-center md:justify-center">
         <div>
           <h1 className="text-xl">Hello, I'm</h1>
@@ -19,6 +20,7 @@ const Home = () => {
           <Macbook />
         </div>
       </div>
+      <ArrowDown />
     </section>
   );
 };
