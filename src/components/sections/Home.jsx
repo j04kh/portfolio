@@ -10,7 +10,7 @@ const Home = () => {
     <section className="h-screen w-full relative">
       <div className="h-full pt-0 mb-32 flex flex-1 flex-col items-center justify-center md:flex-row md:items-center md:justify-center">
         <div>
-          <h1 className="text-xl">Hello, I'm</h1>
+          <h1 className="text-xl">Hello, I&apos;m</h1>
           <h1 className="text-3xl font-semibold md:text-4xl">
             Joaquin Hernandez
           </h1>
