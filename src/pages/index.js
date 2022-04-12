@@ -1,15 +1,8 @@
 import Navbar from "../components/Navbar";
 import Home from "../components/sections/Home";
+import About from "../components/sections/About";
+import Projects from "../components/sections/Projects";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-
-const Projects = dynamic(() => import("../components/sections/Projects"), {
-  ssr: false,
-});
-
-const About = dynamic(() => import("../components/sections/About"), {
-  ssr: false,
-});
 
 export default function Portfolio() {
   const date = new Date();
@@ -18,6 +11,7 @@ export default function Portfolio() {
       <Head>
         <title>Joaquin Hernandez</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Frontend Developer Portfolio" />
         <meta name="author" content="Joaquin Hernandez" />
       </Head>
