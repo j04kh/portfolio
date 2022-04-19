@@ -1,8 +1,14 @@
 import Navbar from "../components/Navbar";
 import Home from "../components/sections/Home";
 import About from "../components/sections/About";
-import Projects from "../components/sections/Projects";
+// import Projects from "../components/sections/Projects";
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import { AnimatePresence } from "framer-motion";
+
+const Projects = dynamic(() => import("../components/sections/Projects"), {
+  ssr: false,
+});
 
 export default function Portfolio() {
   const date = new Date();
@@ -16,7 +22,9 @@ export default function Portfolio() {
         <meta name="author" content="Joaquin Hernandez" />
       </Head>
       <Navbar />
-      <Home />
+      <AnimatePresence>
+        <Home />
+      </AnimatePresence>
       <Projects />
       <About />
       <footer className="w-screen mb-2 mt-10 text-center text-xs font-light">

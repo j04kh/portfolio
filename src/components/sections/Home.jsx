@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import ArrowDown from "../ArrowDown";
+import { motion } from "framer-motion";
 
 const Macbook = dynamic(() => import("../Macbook"), {
   ssr: false,
@@ -7,7 +8,12 @@ const Macbook = dynamic(() => import("../Macbook"), {
 
 const Home = () => {
   return (
-    <section className="h-screen w-full relative">
+    <motion.section
+      className="h-screen w-full relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="h-full pt-0 mb-32 flex flex-1 flex-col items-center justify-center md:flex-row md:items-center md:justify-center">
         <div>
           <h1 className="text-xl">Hello, I&apos;m</h1>
@@ -21,7 +27,7 @@ const Home = () => {
         </div>
       </div>
       <ArrowDown />
-    </section>
+    </motion.section>
   );
 };
 
