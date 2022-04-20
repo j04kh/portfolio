@@ -17,7 +17,7 @@ const Contact = () => {
             />
           </a>
         </Link>
-        <Link href="https://www.linkedin.com/in/joaqu%C3%ADn-hern%C3%A1ndez-545a6b236/">
+        <Link href="https://www.linkedin.com/in/j04kh/">
           <a target="_blank">
             <Image
               src={`/icons/linkedin.png`}

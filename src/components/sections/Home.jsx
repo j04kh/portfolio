@@ -18,7 +18,7 @@ const Home = () => {
         <div>
           <h1 className="text-xl">Hello, I&apos;m</h1>
           <h1 className="text-3xl font-semibold md:text-4xl">
-            Joaquin Hernandez
+            Joaquín Hernández
           </h1>
           <h2 className=" text-sm mt-1 font-light">FRONTEND DEVELOPER</h2>
         </div>
