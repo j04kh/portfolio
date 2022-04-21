@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadGLTFModel } from "../lib/loader";
@@ -19,16 +19,6 @@ const Macbook = () => {
   );
   const [scene] = useState(new THREE.Scene());
   const [_controls, setControls] = useState();
-
-  const handleWindowResize = useCallback(() => {
-    const { current: container } = refBody;
-    if (container && renderer) {
-      const scW = container.clientWidth;
-      const scH = container.clientHeight;
-
-      renderer.setSize(scW, scH);
-    }
-  }, [renderer]);
 
   useEffect(() => {
     const { current: container } = refBody;
@@ -66,10 +56,7 @@ const Macbook = () => {
       controls.enableZoom = false;
       setControls(controls);
 
-      loadGLTFModel(scene, "/model/scene.gltf", {
-        receiveShadow: false,
-        castShadow: false,
-      }).then(() => {
+      loadGLTFModel(scene, "/model/scene.gltf").then(() => {
         animate();
         setLoading(false);
       });
@@ -89,13 +76,6 @@ const Macbook = () => {
     }
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowResize, false);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize, false);
-    };
-  }, [renderer, handleWindowResize]);
 
   return (
     <div className="h-full w-full" ref={refBody}>
