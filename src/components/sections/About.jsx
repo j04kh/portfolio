@@ -1,46 +1,8 @@
 import Image from "next/image";
 import Contact from "./Contact";
+import skills from "../../../public/skills/skills.json";
 
 const About = () => {
-  const skills = [
-    { key: "html", title: "HTML" },
-    {
-      key: "css",
-      title: "CSS",
-    },
-    {
-      key: "js",
-      title: "JavaScript",
-    },
-    {
-      key: "ts",
-      title: "TypeScript",
-    },
-    {
-      key: "react",
-      title: "ReactJS",
-    },
-    {
-      key: "next",
-      title: "NextJS",
-    },
-    {
-      key: "tailwind",
-      title: "Tailwind",
-    },
-    {
-      key: "chakra",
-      title: "ChakraUI",
-    },
-    {
-      key: "mongodb",
-      title: "MongoDB",
-    },
-    {
-      key: "graphql",
-      title: "GraphQL",
-    },
-  ];
   return (
     <section className="w-full max-w-3xl h-full min-h-screen pt-16 flex flex-col justify-center items-center text-center">
       <div className="h-36 w-36 mb-5">

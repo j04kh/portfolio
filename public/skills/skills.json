@@ -1,0 +1,42 @@
+[
+  {
+    "key": "html",
+    "title": "HTML"
+  },
+  {
+    "key": "css",
+    "title": "CSS"
+  },
+  {
+    "key": "js",
+    "title": "JavaScript"
+  },
+  {
+    "key": "ts",
+    "title": "TypeScript"
+  },
+  {
+    "key": "react",
+    "title": "React.js"
+  },
+  {
+    "key": "next",
+    "title": "Next.js"
+  },
+  {
+    "key": "tailwind",
+    "title": "TailwindCSS"
+  },
+  {
+    "key": "chakra",
+    "title": "ChakraUI"
+  },
+  {
+    "key": "mongodb",
+    "title": "MongoDB"
+  },
+  {
+    "key": "graphql",
+    "title": "GraphQL"
+  }
+]
