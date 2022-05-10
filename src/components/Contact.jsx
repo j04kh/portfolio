@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="w-[250px] mt-8">
+    <div className="w-[250px] mt-8 mb-2">
       <h1 className="text-xl font-semibold">Let&apos;s get in touch!</h1>
       <div className="mt-5 flex justify-evenly items-center">
         <Link href="https://github.com/j04kh">

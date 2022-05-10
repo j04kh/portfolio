@@ -1,17 +1,17 @@
 import Image from "next/image";
-import Contact from "./Contact";
+import Contact from "../Contact";
 import skills from "../../../public/skills/skills.json";
 
 const About = () => {
   return (
-    <section className="w-full max-w-3xl h-full min-h-screen pt-16 flex flex-col justify-center items-center text-center">
+    <section className="w-full max-w-4xl h-full min-h-screen mt-5 relative flex flex-col justify-center items-center text-center">
       <div className="h-36 w-36 mb-5">
         <Image
           src="/avatar.png"
           height={480}
           width={480}
           layout="responsive"
-          alt="avatar"
+          alt="A picture of me"
           className="rounded-full"
         />
       </div>
@@ -24,8 +24,8 @@ const About = () => {
         While offline, I spend most of my spare time flying airplanes, taking
         photos or playing music.
       </p>
-      <h2 className="text-lg font-semibold md:mt-6">Skills</h2>
-      <div className="w-full mt-4 flex flex-wrap justify-center">
+      <h2 className="text-lg font-semibold">Skills</h2>
+      <div className="w-full mt-2 flex flex-wrap justify-center">
         {skills.map((skill) => (
           <div key={skill.title} className="mx-2 my-2">
             <Image
