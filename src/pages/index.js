@@ -1,11 +1,16 @@
 import Navbar from "../components/Navbar";
 import Home from "../components/sections/Home";
-import About from "../components/sections/About";
-import Projects from "../components/sections/Projects";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const Avweather = dynamic(() => import("../components/sections/Avweather"));
+const Rickandmorty = dynamic(() =>
+  import("../components/sections/Rickandmorty")
+);
+const Coffeeshop = dynamic(() => import("../components/sections/Coffeeshop"));
+const About = dynamic(() => import("../components/sections/About"));
 
 export default function Portfolio() {
-  const date = new Date();
   return (
     <div className="w-full h-full min-w-screen min-h-screen px-5 bg-zinc-900 flex flex-col items-center font-Montserrat text-gray-100">
       <Head>
@@ -17,11 +22,10 @@ export default function Portfolio() {
       </Head>
       <Navbar />
       <Home />
-      <Projects />
+      <Avweather />
+      <Rickandmorty />
+      <Coffeeshop />
       <About />
-      <footer className="w-screen mb-2 mt-10 text-center text-xs font-light">
-        <p>{`© ${date.getFullYear()} Joaquín Hernández.`}</p>
-      </footer>
     </div>
   );
 }
