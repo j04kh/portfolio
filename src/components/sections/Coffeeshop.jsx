@@ -8,7 +8,7 @@ const Coffeeshop = () => {
       className="w-full max-w-3xl h-full min-h-screen flex flex-col justify-center items-center text-center"
     >
       <h1 className="text-3xl font-semibold mb-5">Coffeeshop</h1>
-      <div className="w-full max-w-sm">
+      <div className="w-[60%] md:w-full max-w-sm">
         <Image
           src="/projects/coffeeshop.png"
           width={922}

@@ -8,7 +8,7 @@ const Rickandmorty = () => {
       className="w-full max-w-3xl h-full min-h-screen flex flex-col justify-center items-center text-center"
     >
       <h1 className="text-3xl font-semibold">Rick and Morty</h1>
-      <div className="w-full my-16 max-w-md">
+      <div className="w-[60%] md:w-full my-16 max-w-md">
         <Image
           src="/projects/rickandmorty.png"
           width={646}
