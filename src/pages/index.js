@@ -9,6 +9,7 @@ const Rickandmorty = dynamic(() =>
 );
 const Coffeeshop = dynamic(() => import("../components/sections/Coffeeshop"));
 const About = dynamic(() => import("../components/sections/About"));
+const Tesla = dynamic(() => import("../components/sections/Tesla"));
 
 export default function Portfolio() {
   return (
@@ -24,6 +25,7 @@ export default function Portfolio() {
       <Home />
       <Coffeeshop />
       <Avweather />
+      <Tesla />
       <Rickandmorty />
       <About />
     </div>
