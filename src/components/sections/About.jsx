@@ -31,8 +31,8 @@ const About = () => {
             <Image
               src={`/skills/${skill.key}.png`}
               alt={skill.title}
-              height={60}
-              width={60}
+              height={50}
+              width={50}
               className="rounded-lg"
             />
             <p className="text-xs font-thin text-center">{skill.title}</p>
