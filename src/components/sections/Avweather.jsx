@@ -23,7 +23,7 @@ const Avweather = () => {
         Built with React and Tailwind CSS.
         <br />
       </h2>
-      <p className="mt-3 text-xs font-light text-gray-300 italic ">
+      <p className="mt-3 text-xs font-light italic ">
         Not familiar with ICAO codes? Try{" "}
         <span className="font-semibold">SUMU</span>
       </p>
