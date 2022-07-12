@@ -17,10 +17,10 @@ const Rickandmorty = () => {
         />
       </div>
       <h2 className="text-sm mt-6">
-        3D web based on the Rick and Morty TV series. Explore characters,
+        3D Web based on the Rick and Morty TV series. Explore characters,
         episodes and locations.
         <br />
-        Built with React, TailwindCSS, React Three Fiber and GraphQL.
+        Built with React Three Fiber, TailwindCSS and GraphQL.
       </h2>
       <div className="mt-5 flex flex-col items-center justify-center">
         <Button

@@ -17,10 +17,10 @@ const Avweather = () => {
         />
       </div>
       <h2 className="text-sm mt-6">
-        Aviation weather application. Search airports by ICAO code and get
+        Aviation Weather Application. Search airports by ICAO code and get
         real-time meteorological reports with a Google Maps view of the airport.
         <br />
-        Built with React and Tailwind CSS.
+        Built with React and TailwindCSS.
         <br />
       </h2>
       <p className="mt-3 text-xs font-light italic ">

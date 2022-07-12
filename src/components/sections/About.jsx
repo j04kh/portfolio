@@ -16,10 +16,8 @@ const About = () => {
       </div>
       <h1 className="text-xl font-semibold">Joaquín Hernández</h1>
       <p className="my-4 text-center text-sm">
-        A computer engineering student and Frontend Developer based in
-        Montevideo, Uruguay. <br />
-        I describe myself as a detail-oriented person who enjoys learning new
-        technologies and creating modern web apps. <br />
+        A Computer Engineering student and Frontend Developer who enjoys
+        learning new technologies and creating modern web apps. <br />
         While offline, I spend most of my spare time flying airplanes, taking
         photos or playing music.
       </p>
