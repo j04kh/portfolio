@@ -10,11 +10,7 @@ const Avweather = () => {
     >
       <h1 className="text-3xl font-semibold mb-5">AvWeather</h1>
       <div className="w-[60%] md:w-full max-w-sm">
-        <Image
-          src={AvWeatherOverview}
-          alt="Avweather overview"
-          placeholder="blur"
-        />
+        <Image src={AvWeatherOverview} alt="Avweather overview" />
       </div>
       <h2 className="text-sm mt-6">
         Aviation Weather Application. Search airports by ICAO code and get

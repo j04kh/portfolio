@@ -10,11 +10,7 @@ const Rickandmorty = () => {
     >
       <h1 className="text-3xl font-semibold">Rick and Morty</h1>
       <div className="w-[60%] md:w-full my-16 max-w-md">
-        <Image
-          src={RickandMortyOverview}
-          alt="Rick and Morty overview"
-          placeholder="blur"
-        />
+        <Image src={RickandMortyOverview} alt="Rick and Morty overview" />
       </div>
       <h2 className="text-sm mt-6">
         3D Web based on the Rick and Morty TV series. Explore characters,

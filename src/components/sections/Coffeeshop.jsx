@@ -10,11 +10,7 @@ const Coffeeshop = () => {
     >
       <h1 className="text-3xl font-semibold mb-5">Coffeeshop</h1>
       <div className="w-[60%] md:w-full max-w-sm">
-        <Image
-          src={CoffeeShopOverview}
-          alt="Coffeeshop overview"
-          placeholder="blur"
-        />
+        <Image src={CoffeeShopOverview} alt="Coffeeshop overview" />
       </div>
       <h2 className="text-sm mt-6">
         Coffeeshop e-commerce with shopping cart functionality, search and

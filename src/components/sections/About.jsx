@@ -7,12 +7,7 @@ const About = () => {
   return (
     <section className="w-full max-w-4xl h-full min-h-screen mt-5 relative flex flex-col justify-center items-center text-center">
       <div className="h-36 w-36 mb-5">
-        <Image
-          src={Avatar}
-          alt="A picture of me"
-          className="rounded-full"
-          placeholder="blur"
-        />
+        <Image src={Avatar} alt="A picture of me" className="rounded-full" />
       </div>
       <h1 className="text-xl font-semibold">Joaquín Hernández</h1>
       <p className="my-4 text-center text-sm">
