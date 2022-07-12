@@ -14,6 +14,7 @@ const Navbar = () => {
         </h1>
       </a>
       <button
+        aria-label="Toggle Dark Mode"
         onClick={() =>
           theme === "dark" ? setTheme("light") : setTheme("dark")
         }
