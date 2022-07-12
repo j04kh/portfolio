@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
+import TeslaOverview from "../../../public/projects/tesla.png";
 
 const Tesla = () => {
   return (
@@ -9,12 +10,7 @@ const Tesla = () => {
     >
       <h1 className="text-3xl font-semibold mb-5">Tesla Model 3</h1>
       <div className="w-[60%] md:w-full max-w-sm">
-        <Image
-          src="/projects/tesla.png"
-          width={689}
-          height={614}
-          alt="Tesla project overview"
-        />
+        <Image src={TeslaOverview} alt="Tesla project overview" />
       </div>
       <h2 className="text-sm mt-6">
         Tesla Model 3 Specs page with animated 3D model.

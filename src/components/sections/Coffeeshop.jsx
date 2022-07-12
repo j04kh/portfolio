@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
+import CoffeeShopOverview from "../../../public/projects/coffeeshop.png";
 
 const Coffeeshop = () => {
   return (
@@ -9,12 +10,7 @@ const Coffeeshop = () => {
     >
       <h1 className="text-3xl font-semibold mb-5">Coffeeshop</h1>
       <div className="w-[60%] md:w-full max-w-sm">
-        <Image
-          src="/projects/coffeeshop.png"
-          width={922}
-          height={1080}
-          alt="Coffeeshop overview"
-        />
+        <Image src={CoffeeShopOverview} alt="Coffeeshop overview" />
       </div>
       <h2 className="text-sm mt-6">
         Coffeeshop e-commerce with shopping cart functionality, search and
