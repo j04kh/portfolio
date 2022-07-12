@@ -35,7 +35,9 @@ const About = () => {
               width={50}
               className="rounded-lg"
             />
-            <p className="text-xs font-thin text-center">{skill.title}</p>
+            <p className="text-xs font-light dark:font-thin text-center">
+              {skill.title}
+            </p>
           </div>
         ))}
       </div>
