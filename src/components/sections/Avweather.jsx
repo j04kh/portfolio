@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
+import AvWeatherOverview from "../../../public/projects/avweather.png";
 
 const Avweather = () => {
   return (
@@ -10,10 +11,9 @@ const Avweather = () => {
       <h1 className="text-3xl font-semibold mb-5">AvWeather</h1>
       <div className="w-[60%] md:w-full max-w-sm">
         <Image
-          src="/projects/avweather.png"
-          width={922}
-          height={1080}
+          src={AvWeatherOverview}
           alt="Avweather overview"
+          placeholder="blur"
         />
       </div>
       <h2 className="text-sm mt-6">

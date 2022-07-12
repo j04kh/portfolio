@@ -17,7 +17,7 @@ export default function Portfolio() {
   const { theme } = useContext(ThemeContext);
   return (
     <html className={theme}>
-      <div className="w-full h-full min-w-screen min-h-screen px-5 bg-zinc-100 dark:bg-zinc-900 flex flex-col items-center font-Montserrat text-zinc-900 dark:text-gray-100 transition-all ease-in duration-50 ">
+      <div className="w-full h-full min-w-screen min-h-screen px-5 selection:text-gray-200 selection:bg-gray-600 bg-zinc-100 dark:bg-zinc-900 flex flex-col items-center font-Montserrat text-zinc-900 dark:text-gray-100 transition-all ease-in duration-50 ">
         <Head>
           <title>Joaquín Hernández</title>
           <meta

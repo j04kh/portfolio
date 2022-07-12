@@ -1,18 +1,17 @@
 import Image from "next/image";
 import Contact from "../Contact";
 import skills from "../../../public/skills/skills.json";
+import Avatar from "../../../public/avatar.png";
 
 const About = () => {
   return (
     <section className="w-full max-w-4xl h-full min-h-screen mt-5 relative flex flex-col justify-center items-center text-center">
       <div className="h-36 w-36 mb-5">
         <Image
-          src="/avatar.png"
-          height={480}
-          width={480}
-          layout="responsive"
+          src={Avatar}
           alt="A picture of me"
           className="rounded-full"
+          placeholder="blur"
         />
       </div>
       <h1 className="text-xl font-semibold">Joaquín Hernández</h1>

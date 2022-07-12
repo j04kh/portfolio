@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
+import RickandMortyOverview from "../../../public/projects/rickandmorty.png";
 
 const Rickandmorty = () => {
   return (
@@ -10,10 +11,9 @@ const Rickandmorty = () => {
       <h1 className="text-3xl font-semibold">Rick and Morty</h1>
       <div className="w-[60%] md:w-full my-16 max-w-md">
         <Image
-          src="/projects/rickandmorty.png"
-          width={646}
-          height={409}
+          src={RickandMortyOverview}
           alt="Rick and Morty overview"
+          placeholder="blur"
         />
       </div>
       <h2 className="text-sm mt-6">
